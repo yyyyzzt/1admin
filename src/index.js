@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-import App from './App';
+import RootRouter from './router'
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css'
 
 import axios from 'utils/axios.js'
 React.Component.prototype.$axios = axios
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<RootRouter />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
